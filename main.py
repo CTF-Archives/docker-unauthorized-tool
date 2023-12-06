@@ -111,7 +111,7 @@ def generater_crontab(mode: str, host: str, port: str | int):
 
 
 @click.command()
-@click.option("--host", "-H", default="192.168.163.142", help="Host of Docker Service", show_default=True)
+@click.option("--host", "-H", help="Host of Docker Service", show_default=True)
 @click.option("--port", "-P", default=2375, help="Port of Docker service, default is 2375 ")
 def main(host: str, port: str | int):
     if not host:
